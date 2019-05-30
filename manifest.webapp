@@ -1,0 +1,86 @@
+{
+  "version": "2.5",
+  "name": "Music",
+  "description": "Gaia Music",
+  "launch_path": "/index.html",
+  "icons": {
+    "84": "/img/icons/music_84.png",
+    "126": "/img/icons/music_126.png",
+    "142": "/img/icons/music_142.png",
+    "189": "/img/icons/music_189.png",
+    "284": "/img/icons/music_284.png"
+  },
+  "developer": {
+    "name": "The Gaia Team",
+    "url": "https://github.com/mozilla-b2g/gaia"
+  },
+  "type": "certified",
+  "permissions": {
+    "audio-channel-content": {},
+    "bluetooth": {},
+    "device-storage:music": {
+      "access": "readwrite"
+    },
+    "device-storage:pictures": {
+      "access": "readwrite"
+    },
+    "nfc-share": {},
+    "settings": {
+      "access": "readonly"
+    },
+    "themeable": {},
+    "moz-extremely-unstable-and-will-change-webcomponents": {}
+  },
+  "activities": {
+    "open": {
+      "filters": {
+        "type": [
+          "audio/mpeg",
+          "audio/ogg",
+          "audio/mp4",
+          "audio/amr",
+          "audio/flac"
+        ]
+      },
+      "disposition": "inline",
+      "returnValue": true,
+      "href": "/open.html"
+    },
+    "pick": {
+      "filters": {
+        "type": [
+          "audio/*",
+          "audio/mpeg",
+          "audio/ogg",
+          "audio/mp4",
+          "audio/flac"
+        ]
+      },
+      "disposition": "inline",
+      "returnValue": true,
+      "href": "/pick.html"
+    }
+  },
+  "locales": {
+    "en-US": {
+      "name": "Music",
+      "description": "Gaia Music"
+    },
+    "fr-x-psaccent": {
+      "name": "Ḿŭŭşīīƈ",
+      "description": "Ɠȧȧīīȧȧ Ḿŭŭşīīƈ"
+    },
+    "ar-x-psbidi": {
+      "name": "‮Wnsıɔ‬",
+      "description": "‮פɐıɐ‬ ‮Wnsıɔ‬"
+    }
+  },
+  "default_locale": "en-US",
+  "orientation": "default",
+  "messages": [
+    {
+      "media-button": "/index.html"
+    }
+  ],
+  "origin": "app://music.gaiamobile.org"
+}
